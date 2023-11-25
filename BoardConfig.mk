@@ -15,7 +15,7 @@
 # components.
 
 # Default device path
-LOCAL_PATH := device/xiaomi/mido
+LOCAL_PATH := device/xiaomi/tissot
 
 # Architecture
 TARGET_ARCH := arm64
@@ -31,7 +31,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mido
+TARGET_BOOTLOADER_BOARD_NAME := tissot
 TARGET_NO_BOOTLOADER := true
 
 # Build env.
