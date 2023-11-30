@@ -54,23 +54,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
-# Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
-    bootctrl.$(TARGET_BOARD_PLATFORM) \
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-# Enable update engine sideloading by including the static version of the
-# boot_control HAL and its dependencies.
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.$(TARGET_BOARD_PLATFORM) \
-    libcutils \
-    libgptutils \
-    libz
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
