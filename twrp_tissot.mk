@@ -31,8 +31,7 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 TARGET_BOARD_PLATFORM := msm8953
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.keystore=$(TARGET_BOARD_PLATFORM) \
-    ro.hardware.bootctrl=$(TARGET_BOARD_PLATFORM)
+    ro.hardware.keystore=$(TARGET_BOARD_PLATFORM)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
