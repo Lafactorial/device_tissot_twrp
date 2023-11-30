@@ -14,10 +14,15 @@
 # limitations under the License.
 #
 
-# Inherit some common Omni stuff.
+# Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-$(call inherit-product, build/target/product/embedded.mk)
+# Release name
+PRODUCT_RELEASE_NAME := tissot
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from device configuration
 $(call inherit-product, device/xiaomi/tissot/device.mk)
