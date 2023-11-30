@@ -15,7 +15,7 @@
 #
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 $(call inherit-product, build/target/product/embedded.mk)
 
