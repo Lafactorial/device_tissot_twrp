@@ -34,8 +34,6 @@ on fs
     chmod 0664 /dev/ion
     chown system system /dev/ion
 
-    start hwservicemanager
-    start servicemanager
 
 on boot
     setprop sys.usb.config none
