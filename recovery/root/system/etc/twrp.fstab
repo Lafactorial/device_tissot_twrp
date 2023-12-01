@@ -5,7 +5,7 @@
 
 /system_image   emmc   /dev/block/bootdevice/by-name/system						 flags=slotselect;backup=1;flashimg=1
 /vendor_image   emmc   /dev/block/bootdevice/by-name/cust
-/splash          emmc              /dev/block/bootdevice/by-name/splash    	flags=display="Splash Image";backup=1;flashimg=1
+/splash         emmc   /dev/block/bootdevice/by-name/splash    	flags=display="Splash Image";backup=1;flashimg=1
 /data           ext4   /dev/block/bootdevice/by-name/userdata                    flags=length=-16384;fileencryption=aes-256-xts
 /firmware       vfat   /dev/block/bootdevice/by-name/modem                       flags=display="Firmware";mounttodecrypt
 /persist        ext4   /dev/block/bootdevice/by-name/persist                     flags=display="Persist"
