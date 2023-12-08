@@ -20,6 +20,10 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from device configuration
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
+$(call inherit-product, build/target/product/aosp_base..mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8953
 
