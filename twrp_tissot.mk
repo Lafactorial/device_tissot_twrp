@@ -17,8 +17,6 @@
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-$(call inherit-product, build/target/product/embedded.mk)
-
 # Inherit from device configuration
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
