@@ -41,6 +41,10 @@ on boot
     setprop sys.usb.config none
     setprop sys.usb.config adb
 
+# Decryption
+on init
+    exec u:r:recovery:s0 -- /system/bin/detect-fbe.sh
+
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     install_keyring
 
