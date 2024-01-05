@@ -43,7 +43,7 @@ on boot
 
 # Decryption
 on init
-    exec u:r:recovery:s0 -- /sbin/detect-fbe.sh
+    exec u:r:recovery:s0 -- /system/bin/detect-fbe.sh
 
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     install_keyring
